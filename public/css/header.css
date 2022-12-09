@@ -1,0 +1,41 @@
+#header__mobileAd {
+    background-color: #4C94FA;
+    color: white;
+    font-weight: 300;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17px;
+}
+
+#header__mobileAd a {
+    text-decoration: none;
+    color: white;
+    margin-left: 22.5px;
+}
+
+#header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 880px;
+    margin: 12px auto;
+}
+
+#header__main #header__logo {
+    width: 50px;
+    height: 50px;
+}
+
+#header__main nav a{
+    text-decoration: none;
+    margin: 8px;
+    color: black;
+}
+
+header {
+    font-size: 12px;
+    background-color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.info_font{
+    font-size: 10px;
+}
+
+
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.board_wrap{
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.board_title{
+    margin-bottom: 30px;
+    margin-top: 180px;
+    margin-left: 350px;
+}
+
+.board_title strong{
+    font-size: 3rem;
+}
+
+.board_title p{
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+.bt_wrap{
+    margin-top: 30px;
+    font-size: 0;
+    text-align: center;
+}
+
+.bt_wrap a{
+    display: inline-block;
+    min-width: 80px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+.bt_wrap a:first-child{
+    margin-left: 0;
+}
+
+.bt_wrap a.on{
+    background: #000;
+    color: #fff;
+}
+
+.board_list{
+    width: 1280px;
+    margin-left: 300px;
+}
+
+.board_list > div{
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+.board_list > div.top{
+    border-bottom: 1px solid #ddd;
+}
+
+.board_list > div:last-child{
+
+}
+
+.board_list > div > div {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.board_list > div.top > div{
+    font-weight: 600;
+}
+
+.board_list .num {
+    width: 128px;
+}
+
+.board_list .title {
+    width: 768px;
+    text-align: left;
+}
+.board_list .top .title{
+    text-align: center;
+}
+
+.board_list .writer {
+    width: 128px;
+}
+
+.board_list .date {
+    width: 128px;
+}
+
+.board_list .count {
+    width: 128px;
+}

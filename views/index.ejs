@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaeYaGYM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+</head>
+<body>
+    <header>
+        <div id="header__mobileAd">
+            <span>
+                <strong>해야짐</strong>이 처음이신가요? 지금 바로 체험해보세요!
+            </span>
+            <a href="">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>앱 다운로드</span>
+            </a>
+        </div>
+        <div id="header__main">
+            <a href="/"><img src="/logo/logo.png" id="header__logo"></a>
+            <nav>
+                <% if (isOwner == false) {%>
+                <a href="/Board/list">커뮤니티</a>
+                <a href="/auth/sign_in">로그인</a>
+                <a href="/auth/sign_up">회원가입</a>
+                <% } else { %>
+                    <%= nick %>
+                    <a href="/MyPage">마이페이지</a> 
+                    <a href="/Calendar">운동달력</a> 
+                    <a href="/Board/list">커뮤니티</a> 
+                    <a href="/auth/logout">로그아웃</a>   
+                    <% } %>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="main__section1"              
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1600">
+            <span class="title">내 몸에 더 잘 맞는<br> 개인 맞춤 운동 서비스<br> <strong>해야짐</strong>과 함께하세요</span>
+            <p>
+                대부분 뚜렷한 목적으로 운동을 시작하지만, 모두 성공적인 결과를 얻지는 못합니다.<br>
+                내 몸을 관리하는 재미와 성취감을 만들어 드리기 위해 운동이 끝날 때까지<br>
+                곁에서 함께하는 러닝 메이트 같은 존재가 되어 드릴 거에요.
+            </p>
+            <a href="" class="button">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>해야짐 알아보기</span>
+            </a>
+            <img src="/img/mainPageImg.png" id="main__section1__mainImg" alt="">
+            <img src="/img/mainPageRoundImg.png" id="main__section1__roundImg" alt="">
+        </section>
+        <hr>
+        <section id="main__section2">
+            <span class="desc-big"
+            data-aos="fade-up" 
+            data-aos-offset="200" 
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1600">>
+                어떤 운동을 할지 고민이라면, 내 몸에 더 잘 맞는<br>
+                <strong>해야짐</strong>을 시작하세요!
+            </span>
+            <span id="main__section2__check"
+            data-aos="fade-up" 
+            data-aos-offset="200" 
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1600">
+                <i class="fa-solid fa-check"
+                data-aos="fade-up" 
+                data-aos-offset="200" 
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1600"></i>
+            </span>
+            <p
+            data-aos="fade-up" 
+            data-aos-offset="200" 
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1600">
+                누구에게나 똑같은 운동은 그만!<br>
+                운동 종류, 운동 횟수, 동작까지<br>
+                나에게 맞는 맞춤 운동을 만나보세요.
+            </p>
+            <div id="main__section2__benefits"
+            data-aos="fade-up" 
+            data-aos-offset="200" 
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1600">
+                <div class="main__section2__benefit">
+                    <div class="mini-logo">
+                        <img src="/logo/logo.png" width="30px" alt="">
+                        <span>해야짐</span>
+                    </div>
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <p>
+                        <strong>맞춤 운동 강도</strong><br>
+                        (맞춤 운동 강도 설정)
+                    </p>
+                    <span>
+                        심박수를 통해 개인 맞춤 운동 강도 측정
+                    </span>
+                </div>
+                <div class="main__section2__benefit">
+                    <div class="mini-logo">
+                        <img src="logo/logo.png" width="30px" alt="">
+                        <span>해야짐</span>
+                    </div>
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <p>
+                        <strong>심박수 측정</strong><br>
+                        (개인 맞춤 운동 강도)
+                    </p>
+                    <span>
+                        심박수를 통해 개인 맞춤 운동 강도 추천 및 내 심박수 확인
+                    </span>
+                </div>
+                <div class="main__section2__benefit">
+                    <div class="mini-logo">
+                        <img src="logo/logo.png" width="30px" alt="">
+                        <span>해야짐</span>
+                    </div>
+                    <i class="fa-solid fa-users"></i>
+                    <p>
+                        <strong>운동 커뮤니티</strong><br>
+                        (운동 정보 공유 서비스)
+                    </p>
+                    <span>
+                        운동의 정보가 필요할 때,<br> 유저들의 운동 정보 공유 기능
+                    </span>
+                </div>
+                <div class="main__section2__benefit">
+                    <div class="mini-logo">
+                        <img src="logo/logo.png" width="30px" alt="">
+                        <span>해야짐</span>
+                    </div>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>
+                        <strong>운동 기록달력</strong><br>
+                        (일별로 내 운동 확인)
+                    </p>
+                    <span>
+                        일별로 내 운동을 확인하거나,<br> 부족한 나의 운동을 한눈에 확인
+                    </span>
+                </div>
+            </div>
+            <div id="main__section2__trigger"
+            data-aos="zoom-in" 
+            data-aos-offset="200" 
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1600">
+                <span>지금 바로 시작하세요!</span>
+                <a href="" class="button">함께하기</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <nav id="footer__nav">
+                <a href="">ⓒHaeuagym.co.kr</a>
+                <a href="">이용약관</a>
+                <a href="">운영정책</a>
+                <a href="">개인정보처리방침</a>
+                <a href="">환불규정</a>
+            </nav>
+            <div id="footer__info">
+                <strong>(주)해야짐</strong><br> 
+                <span>대표 이혁주 | 8221 서울시 구로구 경인로 445 ([구]고척동 62-160) 동양미래대학교</span><br>
+                <span>(주)해야짐은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 (주)해야짐은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</span>
+            </div>
+            <div id="footer__contact">
+                <p>고객센터</p>
+                <div id="footer__contact__kakao">
+                    <img src="img/kakao.png" >
+                    <span>카카오톡 상담</span>
+                </div>
+                <span>평일 09:00 ~ 18:00(점심시간 13:00 ~ 14:00)</span>
+                <span>주말 및 공휴일은 쉽니다..</span>
+            </div>
+        </div>
+    </footer>
+    <script> 
+        AOS.init();
+    </script>
+</body>
+</html>

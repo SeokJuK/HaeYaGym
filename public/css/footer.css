@@ -1,0 +1,74 @@
+footer {
+    background-color: #F6F6F7;
+    font-size: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+footer > div {
+    width: 880px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 
+    "nav contact" max-content
+    "info contact" 1fr / 3fr 1fr;
+    column-gap: 3rem;
+}
+
+#footer__nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+#footer__nav a {
+    text-decoration: none;
+    color: gray;
+    margin-right: 1.75rem;
+}
+
+#footer__info {
+    grid-area: info;
+    font-size: 0.65rem;
+    line-height: 1.25rem;
+    color: gray;
+}
+
+#footer__info strong {
+    color: black;
+}
+
+#footer__contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer__contact p {
+    margin: 3rem 0 1.5rem 0;
+}
+
+#footer__contact__kakao {
+    background-color: #FFEB00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+}
+
+#footer__contact__kakao img {
+    width: 25px;
+}
+
+#footer__contact__kakao span {
+    font-size: 0.5rem;
+}
+
+#footer__contact > span {
+    font-size: 0.65rem;
+    line-height: 1.25rem;
+    color: gray;
+}

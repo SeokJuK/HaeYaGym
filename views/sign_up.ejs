@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/join.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="/js/join.js"></script>
+    </head>
+    <body>
+      <header>
+        <div id="header__mobileAd">
+            <span>
+                <strong>해야짐</strong>이 처음이신가요? 지금 바로 체험해보세요!
+            </span>
+            <a href="">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>앱 다운로드</span>
+            </a>
+        </div>
+        <div id="header__main">
+            <a href="/"><img src="/logo/logo.png" id="header__logo"></a>
+            <nav>
+                <a href="/auth/sign_in">로그인</a>
+                <a href="/auth/sign_up">회원가입</a>
+            </nav>
+        </div>
+    </header>
+      <div class="container">
+        <!-- Heading -->
+        
+        <!-- Links -->
+        <ul class="links">
+          <li>
+            <a href="#" id="signup">회원가입</a>
+          </li>
+        </ul>
+        
+        <!-- Form -->
+        <form  action="/auth/sign_up_process" method="post">
+          
+          <!-- email input -->
+          <div class="first-input input__block first-input__block">
+             <input type="email" placeholder="Email" class="input" id="email"  name="email" />
+          </div>
+          
+          <!-- password input -->
+          <div class="input__block">
+             <input type="password" placeholder="Password" class="input" id="pw" name="password" minlength="6" />
+          </div>
+          
+          <!-- repeat password input -->
+          <div class="input__block">
+            <input type="password" placeholder="repeat_password" class="input" id="pw2" name="pw2" minlength="6"  />
+         </div>
+
+         <!-- name -->
+         <div class="input__block">
+          <input type="text" placeholder="name" class="input" id="name"  name="name"  />
+         </div>
+
+         <!-- nickname -->
+         <div class="input__block">
+            <input type="text" placeholder="nickname" class="input" id="nick"  name="nick"  />
+         </div>
+
+         <!-- weight/height -->
+         <div class="input__block">
+            <div class="body_box">
+            <input type="text" placeholder="weight" class="input" id="weight"  name="weight"  />
+            <input type="text" placeholder="height" class="input" id="height"  name="height"  />
+        </div>
+        </div>
+
+         <!-- birth -->
+         <div class="input__block">
+        <div class=birth_box>
+            <input type="text" placeholder="year" class="input" id="year"   name="year" />
+            <input type="text" placeholder="month" class="input" id="month"  name="month"  />
+            <input type="text" placeholder="day" class="input" id="day"   name="day" />
+        </div>
+        </div>
+
+         
+          <!-- <div class="input__block"> 아직 몰라
+             <input type="password" placeholder="Repeat password" class="input repeat__password" id="repeat__password"    />
+          </div> -->
+          <!-- sign in button -->
+
+          
+          <input type="submit" class="signin__btn" value="Sign Up" onclick="sign_up_finish()">
+        </form>
+        <!-- separator -->
+      </div>
+    </div>
+    <footer>
+      <div>
+          <nav id="footer__nav">
+              <a href="">ⓒHaeuagym.co.kr</a>
+              <a href="">이용약관</a>
+              <a href="">운영정책</a>
+              <a href="">개인정보처리방침</a>
+              <a href="">환불규정</a>
+          </nav>
+          <div id="footer__info">
+              <strong>(주)해야짐</strong><br> 
+              <span>대표 이혁주 | 8221 서울시 구로구 경인로 445 ([구]고척동 62-160) 동양미래대학교</span><br>
+              <span>(주)해야짐은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 (주)해야짐은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</span>
+          </div>  
+          <div id="footer__contact">
+              <p>고객센터</p>
+              <div id="footer__contact__kakao">
+                  <img src="img/kakaotalk_sharing_btn_medium.png" >
+                  <span>카카오톡 상담</span>
+              </div>
+              <span>평일 09:00 ~ 18:00(점심시간 13:00 ~ 14:00)</span>
+              <span>주말 및 공휴일은 쉽니다..</span>
+          </div>
+      </div>
+  </footer>
+    </body>
+</html>

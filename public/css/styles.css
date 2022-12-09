@@ -1,0 +1,223 @@
+body {
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    font-size: 0.75rem;
+    background-color: white;
+}
+
+strong {
+    font-weight: bold;
+}
+
+hr {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 0 0;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+}
+
+a.button {
+    background-color: #4C94FA;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.75rem;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    line-height: 2.2rem;
+}
+
+p {
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+#header__mobileAd {
+    background-color: #4C94FA;
+    color: white;
+    font-weight: 300;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header__mobileAd a {
+    text-decoration: none;
+    color: white;
+    margin-left: 1.875rem;
+}
+
+#header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 880px;
+    margin: 0.75rem auto;
+}
+
+#header__main #header__logo {
+    width: 50px;
+    height: 50px;
+}
+
+#header__main nav a{
+    text-decoration: none;
+    margin: 0.5rem;
+    color: black;
+}
+
+main {
+    display: block;
+    width: 880px;
+    margin: 10rem auto;
+    margin-bottom: 0;
+}
+
+section {
+    margin-top: 5rem;
+}
+
+#main__section1 {
+    display: grid;
+    grid-template: 
+    "title mainPageImg" 1.2fr
+    "desc mainPageImg" max-content
+    "button mainPageImg" 1fr / max-content 1fr;
+    position: relative;
+}
+
+#main__section1 .title {
+    grid-area: title;
+    place-self: center start;
+}
+
+#main__section1__mainImg {
+    height: 450px;
+    grid-area: mainPageImg;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    place-self: end end;
+}
+
+#main__section1 p {
+    grid-area: desc;
+    place-self: start;
+    line-height: 1.4rem;
+}
+
+#main__section1 a {
+    grid-area: button;
+    place-self: center start;
+}
+
+#main__section1__roundImg {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: -40px;
+    bottom: -20px;
+    border-radius: 50%;
+}
+
+#main__section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.desc-big {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+#main__section2__check {
+    color: white;
+    background-color: #4C94FA;
+    padding: 10px;
+    margin: 2rem;
+    border-radius: 50%;
+}
+
+#main__section2 > p:first-of-type {
+    text-align: center;
+    line-height: 1.25rem;
+}
+
+#main__section2__benefits {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 155%;
+    margin-top: 3rem;
+}
+
+.main__section2__benefit {
+    border: 1px solid gray;
+    width: 15%;
+    padding: 2rem;
+    padding-bottom: 200px;
+}
+.mini-logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    width: fit-content;
+    padding: 0 6px 0 1px;
+    font-size: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.main__section2__benefit i {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main__section2__benefit p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.main__section2__benefit span {
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+
+#main__section2__trigger {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main__section2__trigger span {
+    font-size: 1.5rem;
+}
+
+#main__section2__trigger a {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+}

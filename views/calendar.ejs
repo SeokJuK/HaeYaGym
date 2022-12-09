@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="assets/styles/index.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/calendar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>HaeYaGym</title>
+</head>
+<body>
+   <header>
+      <div id="header__mobileAd">
+          <span>
+              <strong>해야짐</strong>이 처음이신가요? 지금 바로 체험해보세요!
+          </span>
+          <a href="">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <span>앱 다운로드</span>
+          </a>
+      </div>
+      <div id="header__main">
+          <a href="/"><img src="/logo/logo.png" id="header__logo"></a>
+          <nav>
+              <% if(isOwner == false) {%>
+              <a href="/Board/list">커뮤니티</a> 
+              <a href="/auth/sign_in">로그인</a>
+              <a href="/auth/sign_up">회원가입</a>
+              <% }else{ %>
+                  <%= nick %>
+                  <a href="/MyPage">마이페이지</a> 
+                  <a href="/Calendar">운동달력</a> 
+                  <a href="/Board/list">커뮤니티</a> 
+                  <a href="/auth/logout">로그아웃</a>   
+                  <% } %>
+          </nav>
+      </div>
+  </header>
+  <div class="main">
+    <div class="content-wrap">
+      <div class="content-left">
+        <div class="main-wrap">
+          <div id="main-day" class="main-day"></div>
+          <div id="main-date" class="main-date"></div>
+        </div>
+        <div class="todo-wrap">
+          <div class="todo-title">Today's Workout</div>
+          <div class="input-wrap">
+            <input type="text" placeholder="Write Here!!" id="input-box" class="input-box">
+            <button type="button" id="input-data" class="input-data">작성하기</button>
+            <div id="input-list" class="input-list"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <table id="calendar" align="center">
+          <thead>
+            <tr class="btn-wrap clearfix">
+              <td>
+                <label id="prev">
+                    &#60;
+                </label>
+              </td>
+              <td align="center" id="current-year-month" colspan="5"></td>
+              <td>
+                <label id="next">
+                    &#62;
+                </label>
+              </td>
+            </tr>
+            <tr>
+                <td class = "sun" align="center">일</td>
+                <td align="center">월</td>
+                <td align="center">화</td>
+                <td align="center">수</td>
+                <td align="center">목</td>
+                <td align="center">금</td>
+                <td class= "sat" align="center">토</td>
+              </tr>
+          </thead>
+          <tbody id="calendar-body" class="calendar-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="/js/calendar.js"></script>
+  </div>
+  <footer>
+   <div>
+       <nav id="footer__nav">
+           <a href="">ⓒHaeuagym.co.kr</a>
+           <a href="">이용약관</a>
+           <a href="">운영정책</a>
+           <a href="">개인정보처리방침</a>
+           <a href="">환불규정</a>
+       </nav>
+       <div id="footer__info">
+           <strong>(주)해야짐</strong><br> 
+           <span>대표 이혁주 | 8221 서울시 구로구 경인로 445 ([구]고척동 62-160) 동양미래대학교</span><br>
+           <span>(주)해야짐은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 (주)해야짐은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.</span>
+       </div>
+       <div id="footer__contact">
+           <p>고객센터</p>
+           <div id="footer__contact__kakao">
+               <img src="img/kakaotalk_sharing_btn_medium.png" >
+               <span>카카오톡 상담</span>
+           </div>
+           <span>평일 09:00 ~ 18:00(점심시간 13:00 ~ 14:00)</span>
+           <span>주말 및 공휴일은 쉽니다..</span>
+       </div>
+   </div>
+</footer>
+</body>
+</html>
